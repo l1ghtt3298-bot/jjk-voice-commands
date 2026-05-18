@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JJK Voice Commands</title>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background: #1a1a2e;
+      color: white;
+      text-align: center;
+      padding: 50px;
+  }
+  h1 { color: #e94560; }
+  #status {
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      background: #16213e;
+  }
+  #detected {
+      font-size: 24px;
+      color: #0f0;
+      margin: 20px;
+      min-height: 30px;
+  }
+  button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #e94560;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 10px;
+  }
+  button:hover { background: #ff6b6b; }
+  button:disabled { background: #555; }
+</style>
+</head>
+<body>
+<h1>🔮 JJK Voice Commands</h1>
+<div id="status">Click "Start Listening" to begin</div>
+<button id="startBtn" onclick="startListening()">🎤 Start Listening</button>
+<button id="stopBtn" onclick="stopListening()" disabled>⏹ Stop</button>
+<div id="detected"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
